@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scoreboard.css">
+    <title>Scoreboard</title>
+    <style>
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            margin-top: 80px;
+            background-color: #dfdfdf;
+        }
+        .container {
+            margin: 0 auto;
+            width: 300px;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        select {
+            border: 0;
+        }
+        select:focus {
+            outline: none;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="scoreboard">
+            <ul class="list-group">
+                <li class="list-group-item header-scoreboard" aria-disabled="true">
+                    <span class="flex-fill text-shadow text-white"><i class="icon-th-thumb-empty"></i> Le scoreboard</span>
+                    <select name="games" id="games">
+                        <option value="csgo">CS:GO</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="lol">Lol</option>
+                        <option value="football">Football</option>
+                    </select>
+                </li>
+                <li class="title__cag soon_match">Les matchs à venir</li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a">Astralis</span>
+                        <div class="scoreboard-equipe-date">25/07</div>
+                        <span class="scoreboard-equipe-b">NiP</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a">NAVI</span>
+                        <div class="scoreboard-equipe-date">16/06</div>
+                        <span class="scoreboard-equipe-b">Vitality</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a">Heroic</span>
+                        <div class="scoreboard-equipe-date">19h</div>
+                        <span class="scoreboard-equipe-b">Verygames</span>
+                    </a>
+                </li>
+                <li class="title__cag end_match">Les matchs terminés</li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a">NAVI</span>
+                        <div class="scoreboard-equipe-result"><span class="scoreboard-lose">8</span><span class="scoreboard-win">16</span></div>
+                        <span class="scoreboard-equipe-b scoreboard-equipe-win">Vitality</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a scoreboard-equipe-win">Astralis</span>
+                        <div class="scoreboard-equipe-result"><span class="scoreboard-win">16</span><span class="scoreboard-lose">4</span></div>
+                        <span class="scoreboard-equipe-b">NiP</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a">Humanity</span>
+                        <div class="scoreboard-equipe-result"><span class="scoreboard-draw">15</span><span class="scoreboard-draw">15</span></div>
+                        <span class="scoreboard-equipe-b">Vitality</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a">Heroic</span>
+                        <div class="scoreboard-equipe-result"><span class="scoreboard-lose">12</span><span class="scoreboard-win">16</span></div>
+                        <span class="scoreboard-equipe-b scoreboard-equipe-win">Verygames</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a scoreboard-equipe-win">France</span>
+                        <div class="scoreboard-equipe-result"><span class="scoreboard-win">16</span><span class="scoreboard-lose">2</span></div>
+                        <span class="scoreboard-equipe-b">Belgique</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a">NAVI</span>
+                        <div class="scoreboard-equipe-result"><span class="scoreboard-lose">8</span><span class="scoreboard-win">16</span></div>
+                        <span class="scoreboard-equipe-b scoreboard-equipe-win">Vitality</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="list-group-item">
+                        <span class="scoreboard-equipe-a scoreboard-equipe-win">Astralis</span>
+                        <div class="scoreboard-equipe-result"><span class="scoreboard-win">16</span><span class="scoreboard-lose">4</span></div>
+                        <span class="scoreboard-equipe-b">NiP</span>
+                    </a>
+                </li>
+            </ul>
+            <footer id="scoreboard-footer">
+                <a href="#">Afficher tous les résultats</a>
+            </footer>
+        </div>
+        <br>
+        <div class="text-center">
+            <small>* Pourquoi pas ajouter les matchs en cours</small>
+        </div>
+    </div>
+</body>
+</html>
