@@ -44,7 +44,7 @@
     text-align: right;
     flex-basis: 37.5%;
 }
-.scoreboard-equipe-result {
+.scoreboard-equipe-score {
     display: flex;
     text-align: center;
     flex-basis: 25%;
@@ -58,20 +58,20 @@
 .scoreboard-equipe-win {
     font-weight: bold;
 }
-.scoreboard-result-lose {
+.scoreboard-score-lose {
     background-color: #ff4f4f;
     padding: 6px 10px;
     width: 50%;
     min-width: 40px;
 }
-.scoreboard-result-win {
+.scoreboard-score-win {
     background-color: #2eec65;
     padding: 6px 10px;
     width: 50%;
     font-weight: bold;
     min-width: 40px;
 }
-.scoreboard-result-draw {
+.scoreboard-score-draw {
     background-color: #3faaff;
     padding: 6px 10px;
     width: 50%;
