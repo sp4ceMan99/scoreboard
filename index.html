@@ -141,20 +141,27 @@
     </div>
     <script>
 
-        function toogleShowMatch(element, target) {
+        /*
+            On doit pouvoir améliorer le code javascript ci-dessous
+        */
+
+        function toogleShowMatch(elementThis, target) {
+
             const elementShowHide = document.getElementsByClassName(target)[0]
-            // elementShowHide.classList.remove("defaultHide");
+
             elementShowHide.classList.toggle("toggleHide");
-            updateToggleText(element, elementShowHide);
+
+            updateToggleText(elementThis, elementShowHide);
         }
 
         function updateToggleText(element, elementShowHide) {
-            if (elementShowHide.classList.contains('toggleHide')) {
-                element.innerHTML  = 'Afficher';
-            } else {
-                element.innerHTML = 'Masquer';
-            }
+
+            const isElementHide = elementShowHide.classList.contains('toggleHide')
+
+            element.innerHTML = (isElementHide) ? "Afficher" : "Masquer"
+
         }
+        
     </script>
 </body>
 </html>
