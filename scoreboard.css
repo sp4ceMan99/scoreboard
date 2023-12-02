@@ -96,16 +96,15 @@ footer#scoreboard-footer {
     background-color: #198754;
 }
 .scoreboard .scoreboard-category {
-    padding: 7px 15px 10px 15px;
+    padding: 10px 15px;
     color: white;
     margin: 0px -1px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .scoreboard .scoreboard-category a {
     font-size: small;
-    align-items: center;
-    display: flex;
     color: rgba(255, 255, 255, 0.7);
 }
 .scoreboard .scoreboard-category a:hover {
@@ -123,10 +122,9 @@ select#games {
 }
 .toggleHide {
     max-height: 0px!important;
-    transition: max-height 0.3s ease;
 }
 .scoreboard-match-end, .scoreboard-match-soon {
-    max-height: 500px;
+    max-height: 350px;
     transition: max-height 0.3s ease;
     overflow: hidden;
 }
