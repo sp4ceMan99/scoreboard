@@ -5,6 +5,10 @@
     border-radius: 8px;
     overflow: hidden;
 }
+.scoreboard a {
+    text-decoration: none;
+    color: #000;
+}
 .scoreboard .scoreboard-header {
     display: flex;
     align-items: center;
@@ -27,10 +31,6 @@
 }
 .scoreboard-match-item:hover .scoreboard-equipe-b {
     background: linear-gradient(270deg,transparent,#cccccc);
-}
-.scoreboard-match-item:hover {
-    text-decoration: none;
-    color: black;
 }
 .scoreboard .scoreboard-equipe-a {
     padding: 6px 10px;
@@ -110,7 +110,7 @@
 .scoreboard .scoreboard-category a:hover {
     color: rgba(255, 255, 255, 1);
 }
-.scoreboard-equipe-date {
+.scoreboard .scoreboard-equipe-date {
     display: flex;
     text-align: center;
     flex-basis: 25%;
