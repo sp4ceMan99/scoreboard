@@ -98,7 +98,6 @@ footer#scoreboard-footer {
     padding: 7px 15px 10px 15px;
     color: white;
     margin: 0px -1px;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
 }

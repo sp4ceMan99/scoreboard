@@ -141,6 +141,7 @@
     </div>
     <script>
         const defaultHide = document.getElementsByClassName("defaultHide")
+        
         for(let i = 0; i < defaultHide.length; i++) {
             defaultHide[i].click()
         }
@@ -155,7 +156,7 @@
             if (elementShowHide.classList.contains('toggleShowMatch')) {
                 element.innerHTML  = 'Afficher';
             } else {
-                element.innerText = 'Masquer';
+                element.innerHTML = 'Masquer';
             }
         }
     </script>
