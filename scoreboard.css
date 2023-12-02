@@ -5,7 +5,7 @@
     border-radius: 8px;
     overflow: hidden;
 }
-.scoreboard-header {
+.scoreboard .scoreboard-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,50 +32,50 @@
     text-decoration: none;
     color: black;
 }
-.scoreboard-equipe-a {
+.scoreboard .scoreboard-equipe-a {
     padding: 6px 10px;
     background: linear-gradient(90deg,transparent,#ececec);
     min-width: 110px;
     text-align: right;
     flex-basis: 37.5%;
 }
-.scoreboard-equipe-score {
+.scoreboard .scoreboard-equipe-score {
     display: flex;
     text-align: center;
     flex-basis: 25%;
 }
-.scoreboard-equipe-b {
+.scoreboard .scoreboard-equipe-b {
     padding: 6px 10px;
     background: linear-gradient(270deg,transparent,#ececec);
     text-align: left;
     flex-basis: 37.5%;
 }
-.scoreboard-equipe-win {
+.scoreboard .scoreboard-equipe-win {
     font-weight: bold;
 }
-.scoreboard-score-lose {
+.scoreboard .scoreboard-score-lose {
     background-color: #ff4f4f;
     padding: 6px 10px;
     width: 50%;
     min-width: 40px;
 }
-.scoreboard-score-win {
+.scoreboard .scoreboard-score-win {
     background-color: #2eec65;
     padding: 6px 10px;
     width: 50%;
     font-weight: bold;
     min-width: 40px;
 }
-.scoreboard-score-draw {
+.scoreboard .scoreboard-score-draw {
     background-color: #3faaff;
     padding: 6px 10px;
     width: 50%;
     min-width: 40px;
 }
-footer#scoreboard-footer {
+.scoreboard .scoreboard-footer {
     display: flex;
 }
-#scoreboard-footer a {
+.scoreboard .scoreboard-footer a {
     padding: 12px 0px;
     background-color: #ededed;
     flex-basis: 100%;
@@ -85,7 +85,7 @@ footer#scoreboard-footer {
     text-decoration: none;
     color: #000000;
 }
-#scoreboard-footer a:hover {
+.scoreboard .scoreboard-footer a:hover {
     background-color: rgb(209, 209, 209);
     color: black;
 }
@@ -116,14 +116,14 @@ footer#scoreboard-footer {
     flex-basis: 25%;
     justify-content: center;
 }
-select#games {
+.scoreboard select#games {
     padding: 5px;
     border-radius: 3px;
 }
-.toggleHide {
+.scoreboard .toggleHide {
     max-height: 0px!important;
 }
-.scoreboard-match-end, .scoreboard-match-soon {
+.scoreboard .scoreboard-match-end, .scoreboard .scoreboard-match-soon {
     max-height: 350px;
     transition: max-height 0.3s ease;
     overflow: hidden;
