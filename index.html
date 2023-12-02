@@ -77,9 +77,9 @@
             </div>
             <div class="scoreboard-category end_match">
                 <span>Les matchs terminés</span>
-                <a href="javascript:void(0)" class="defaultHide" onclick="toogleShowMatch(this,'scoreboard-match-end')">Afficher</a>
+                <a href="javascript:void(0)" onclick="toogleShowMatch(this,'scoreboard-match-end')">Afficher</a>
             </div>
-            <div class="scoreboard-match-end">
+            <div class="scoreboard-match-end toggleHide">
                 <div class="scoreboard-match">
                     <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a">NAVI</span>
@@ -140,20 +140,16 @@
         </div>
     </div>
     <script>
-        const defaultHide = document.getElementsByClassName("defaultHide")
-        
-        for(let i = 0; i < defaultHide.length; i++) {
-            defaultHide[i].click()
-        }
 
         function toogleShowMatch(element, target) {
             const elementShowHide = document.getElementsByClassName(target)[0]
-            elementShowHide.classList.toggle("toggleShowMatch");
+            // elementShowHide.classList.remove("defaultHide");
+            elementShowHide.classList.toggle("toggleHide");
             updateToggleText(element, elementShowHide);
         }
 
         function updateToggleText(element, elementShowHide) {
-            if (elementShowHide.classList.contains('toggleShowMatch')) {
+            if (elementShowHide.classList.contains('toggleHide')) {
                 element.innerHTML  = 'Afficher';
             } else {
                 element.innerHTML = 'Masquer';

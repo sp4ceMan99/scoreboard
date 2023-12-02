@@ -120,7 +120,7 @@ select#games {
     padding: 5px;
     border-radius: 3px;
 }
-.toggleShowMatch {
+.toggleHide {
     max-height: 0px!important;
     transition: max-height 0.3s ease;
 }
