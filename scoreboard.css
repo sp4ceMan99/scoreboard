@@ -99,6 +99,17 @@ footer#scoreboard-footer {
     color: white;
     margin: 0px -1px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.scoreboard .scoreboard-category a {
+    font-size: small;
+    align-items: center;
+    display: flex;
+    color: rgba(255, 255, 255, 0.7);
+}
+.scoreboard .scoreboard-category a:hover {
+    color: rgba(255, 255, 255, 1);
 }
 .scoreboard-equipe-date {
     display: flex;
