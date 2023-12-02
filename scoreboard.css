@@ -5,18 +5,15 @@
     border-radius: 8px;
     overflow: hidden;
 }
-.scoreboard ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.header-scoreboard {
+.scoreboard-header {
+    display: flex;
+    justify-content: space-between;
     background-color: #000;
     padding: 10px 15px!important;
     text-align: left;
     margin: -1px -1px;
 }
-.scoreboard .list-group-item {
+.scoreboard .scoreboard-match-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,16 +21,13 @@
     border: 0;
     border-bottom: 1px solid #e0e0e0;
 }
-.scoreboard ul li:last-child a {
-    border: 0!important;
-}
-.scoreboard ul li a:hover .scoreboard-equipe-a {
+.scoreboard-match-item:hover .scoreboard-equipe-a {
     background: linear-gradient(90deg,transparent,#cccccc);
 }
-.scoreboard ul li a:hover .scoreboard-equipe-b {
+.scoreboard-match-item:hover .scoreboard-equipe-b {
     background: linear-gradient(270deg,transparent,#cccccc);
 }
-.scoreboard ul li a:hover {
+.scoreboard-match-item:hover {
     text-decoration: none;
     color: black;
 }
@@ -100,10 +94,11 @@ footer#scoreboard-footer {
 .scoreboard .soon_match {
     background-color: #198754;
 }
-.scoreboard .title__cag {
+.scoreboard .scoreboard-category {
     padding: 7px 15px 10px 15px;
     color: white;
     margin: 0px -1px;
+    cursor: pointer;
 }
 .scoreboard-equipe-date {
     display: flex;
@@ -114,4 +109,13 @@ footer#scoreboard-footer {
 select#games {
     padding: 5px;
     border-radius: 3px;
+}
+.toggleShowMatch {
+    max-height: 0px!important;
+    transition: max-height 0.3s ease;
+}
+.scoreboard-match-end, .scoreboard-match-soon {
+    max-height: 500px;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
 }

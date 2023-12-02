@@ -39,89 +39,91 @@
 <body>
     <div class="container">
         <div class="scoreboard">
-            <ul class="list-group">
-                <li class="list-group-item header-scoreboard" aria-disabled="true">
-                    <span class="flex-fill text-shadow text-white"><i class="icon-th-thumb-empty"></i> Le scoreboard</span>
-                    <select name="games" id="games">
-                        <option value="csgo">CS:GO</option>
-                        <option value="valorant">Valorant</option>
-                        <option value="lol">Lol</option>
-                        <option value="football">Football</option>
-                    </select>
-                </li>
-                <li class="title__cag soon_match">Les matchs à venir</li>
-                <li>
-                    <a href="#" class="list-group-item">
+            <header class="scoreboard-header" aria-disabled="true">
+                <span class="flex-fill text-shadow text-white"><i class="icon-th-thumb-empty"></i> Le scoreboard</span>
+                <select name="games" id="games">
+                    <option value="csgo">CS:GO</option>
+                    <option value="valorant">Valorant</option>
+                    <option value="lol">Lol</option>
+                    <option value="football">Football</option>
+                </select>
+            </header>
+            <div class="scoreboard-category soon_match" onclick="toogleShowMatch('scoreboard-match-soon')">Les matchs à venir</div>
+            <div class="scoreboard-match-soon">
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a">Astralis</span>
                         <div class="scoreboard-equipe-date">25/07</div>
                         <span class="scoreboard-equipe-b">NiP</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="list-group-item">
+                </div>
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a">NAVI</span>
                         <div class="scoreboard-equipe-date">16/06</div>
                         <span class="scoreboard-equipe-b">Vitality</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="list-group-item">
+                </div>
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a">Heroic</span>
                         <div class="scoreboard-equipe-date">19h</div>
                         <span class="scoreboard-equipe-b">Verygames</span>
                     </a>
-                </li>
-                <li class="title__cag end_match">Les matchs terminés</li>
-                <li>
-                    <a href="#" class="list-group-item">
+                </div>
+            </div>
+            <div class="scoreboard-category end_match" onclick="toogleShowMatch('scoreboard-match-end')">Les matchs terminés</div>
+            <div class="scoreboard-match-end">
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a">NAVI</span>
                         <div class="scoreboard-equipe-score"><span class="scoreboard-score-lose">8</span><span class="scoreboard-score-win">16</span></div>
                         <span class="scoreboard-equipe-b scoreboard-equipe-win">Vitality</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="list-group-item">
+                </div>
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a scoreboard-equipe-win">Astralis</span>
                         <div class="scoreboard-equipe-score"><span class="scoreboard-score-win">16</span><span class="scoreboard-score-lose">4</span></div>
                         <span class="scoreboard-equipe-b">NiP</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="list-group-item">
+                </div>
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a">Humanity</span>
                         <div class="scoreboard-equipe-score"><span class="scoreboard-score-draw">15</span><span class="scoreboard-score-draw">15</span></div>
                         <span class="scoreboard-equipe-b">Vitality</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="list-group-item">
+                </div>
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a">Heroic</span>
                         <div class="scoreboard-equipe-score"><span class="scoreboard-score-lose">12</span><span class="scoreboard-score-win">16</span></div>
                         <span class="scoreboard-equipe-b scoreboard-equipe-win">Verygames</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="list-group-item">
+                </div>
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a scoreboard-equipe-win">France</span>
                         <div class="scoreboard-equipe-score"><span class="scoreboard-score-win">16</span><span class="scoreboard-score-lose">2</span></div>
                         <span class="scoreboard-equipe-b">Belgique</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="list-group-item">
+                </div>
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a">NAVI</span>
                         <div class="scoreboard-equipe-score"><span class="scoreboard-score-lose">8</span><span class="scoreboard-score-win">16</span></div>
                         <span class="scoreboard-equipe-b scoreboard-equipe-win">Vitality</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#" class="list-group-item">
+                </div>
+                <div class="scoreboard-match">
+                    <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a scoreboard-equipe-win">Astralis</span>
                         <div class="scoreboard-equipe-score"><span class="scoreboard-score-win">16</span><span class="scoreboard-score-lose">4</span></div>
                         <span class="scoreboard-equipe-b">NiP</span>
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
             <footer id="scoreboard-footer">
                 <a href="#">Afficher tous les résultats</a>
             </footer>
@@ -131,5 +133,17 @@
             <small>* Pourquoi pas ajouter les matchs en cours</small>
         </div>
     </div>
+    <script>
+        
+        const defaultHide = document.getElementsByClassName("defaultHide")
+        for(let i = 0; i < defaultHide.length; i++) {
+            defaultHide[i].click()
+        }
+
+        function toogleShowMatch(target) {
+            const element = document.getElementsByClassName(target)[0]
+            element.classList.toggle("toggleShowMatch");
+        }
+    </script>
 </body>
 </html>
