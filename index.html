@@ -45,7 +45,7 @@
             </header>
             <div class="scoreboard-category soon_match">
                 <span>Les matchs à venir</span>
-                <a href="javascript:void(0)" onclick="toogleShowMatch(this, 'scoreboard-match-soon')">Masquer</a>
+                <a href="javascript:void(0)" onclick="toggleVisibility(this, 'scoreboard-match-soon')">Masquer</a>
             </div>
             <div class="scoreboard-match-soon">
                 <div class="scoreboard-match">
@@ -72,9 +72,9 @@
             </div>
             <div class="scoreboard-category end_match">
                 <span>Les matchs terminés</span>
-                <a href="javascript:void(0)" onclick="toogleShowMatch(this,'scoreboard-match-end')">Afficher</a>
+                <a href="javascript:void(0)" onclick="toggleVisibility(this, 'scoreboard-match-end')">Afficher</a>
             </div>
-            <div class="scoreboard-match-end toggleHide">
+            <div class="scoreboard-match-end toggleVisibility">
                 <div class="scoreboard-match">
                     <a href="#" class="scoreboard-match-item">
                         <span class="scoreboard-equipe-a">NAVI</span>
@@ -136,20 +136,21 @@
     </div>
     <script>
 
-        function toogleShowMatch(elementThis, target) {
+        function toggleVisibility(element, target) {
 
-            const elementShowHide = document.getElementsByClassName(target)[0]
+            const targetElement = document.getElementsByClassName(target)[0];
 
-            elementShowHide.classList.toggle("toggleHide");
+            targetElement.classList.toggle("toggleVisibility");
 
-            updateToggleText(elementThis, elementShowHide);
+            updateToggleText(element, targetElement);
+
         }
 
-        function updateToggleText(element, elementShowHide) {
+        function updateToggleText(element, targetElement) {
 
-            const isElementHide = elementShowHide.classList.contains('toggleHide')
+            const isVisible = targetElement.classList.contains('toggleVisibility');
 
-            element.innerHTML = (isElementHide) ? "Afficher" : "Masquer"
+            element.innerHTML = (isVisible) ? "Afficher" : "Masquer";
 
         }
         
