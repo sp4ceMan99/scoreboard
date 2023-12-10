@@ -146,21 +146,15 @@
         })
 
         function toggleVisibility(element, target) {
-
             const targetElement = document.querySelector(target);
-
             targetElement.classList.toggle("toggleVisibility");
-
             updateToggleText(element, targetElement);
 
         }
 
         function updateToggleText(element, targetElement) {
-
             const isVisible = targetElement.classList.contains('toggleVisibility');
-
             element.innerHTML = (isVisible) ? "Afficher" : "Masquer";
-
         }
         
     </script>
